@@ -1,5 +1,8 @@
 # Progress
 
+## Ship Track (January)
+- Prestiiiged
+
 ## Done
 - Triii repo created
 - Base folder structure initialized
@@ -8,19 +11,22 @@
 - Idea Vault populated (Prestiiiged, Points Feeder, Agent OS)
 - Swipe Vault populated (Ralph thread, Claude-Mem)
 - First daily plan generated
+- Initial guardrails added
 
 ## Next
+- Publish Prestiiiged v0 principles page
+- Write 5 core operating frameworks
+- Draft onboarding flow copy
 
 ### Prestiiiged
 - [ ] Write 5 non-negotiable principles
 - [ ] Draft landing page copy (headline + subhead + CTA)
-- [ ] Outline daily operating guide structure
+- [ ] Build High Achiever OS V1 (PDF + templates + chatbot)
+- [ ] Set up Gumroad delivery
 
-### SongBird
-- [ ] Define Song of the Day card format
-- [ ] Write 3 example reflection prompts
-- [ ] Sketch core loop (what happens each day)
+### SongBird (maintenance only)
+- [ ] 1 small task/day max
+- [ ] Define Song of the Day card format (when bandwidth allows)
 
 ### Triii
-- [ ] Add first guardrail after a mistake happens
 - [ ] Run weekly planning session (Sunday)
