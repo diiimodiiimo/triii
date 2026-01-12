@@ -17,6 +17,7 @@
 - Templates created (exports/templates/)
 - Gumroad product copy created (exports/gumroad_product_copy.md)
 - Chatbot config created (exports/chatbot_config.md)
+- Landing page copy created (exports/landing_page_copy.md)
 
 ## Next
 - Publish Prestiiiged v0 principles page
