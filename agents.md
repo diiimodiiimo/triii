@@ -31,7 +31,7 @@ Truth: tests, types, lint. State: files + git. Context: disposable.
 - `runs/weekly.md`: weekly plan + project priorities
 - `vaults/ideas.md`: idea vault (structured cards)
 - `vaults/swipe.md`: swipe vault (references + why they're good)
-- `canon/voice_prestige.md`: Prestige.os voice contract
+- `canon/voice_prestige.md`: Prestiiiged voice contract
 - `canon/voice_songbird.md`: SongBird voice contract
 - `canon/principles.md`: your operating principles
 - `ralph/*`: loop state hygiene and guardrails
