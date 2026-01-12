@@ -185,7 +185,7 @@ The chatbot must embody Prestiiiged principles in every response:
 | PDF exported and formatted | ✓ | #5 |
 | Templates created (Notion/Google Docs) | ✓ | #2 |
 | Gumroad product page live | ✓ (copy ready) | #5 |
-| Chatbot configured with knowledge base | [ ] | #1, #3 |
+| Chatbot configured with knowledge base | ✓ (config ready) | #1, #3 |
 | Landing page with embed or link | [ ] | #2, #5 |
 
 ---
@@ -210,6 +210,6 @@ The chatbot must embody Prestiiiged principles in every response:
 1. [x] Export PDF with principles + frameworks (see `exports/prestiiiged_high_achiever_os_v1.md`)
 2. [x] Create Notion/Docs templates (see `exports/templates/`)
 3. [x] Set up Gumroad product page (copy ready: `exports/gumroad_product_copy.md`)
-4. [ ] Configure chatbot with PDF as knowledge base
+4. [x] Configure chatbot with PDF as knowledge base (config ready: `exports/chatbot_config.md`)
 5. [ ] Write landing page copy (use options above)
 6. [ ] Deploy and test end-to-end flow

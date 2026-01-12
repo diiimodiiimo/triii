@@ -16,6 +16,7 @@
 - High Achiever OS V1 PDF content created (exports/prestiiiged_high_achiever_os_v1.md)
 - Templates created (exports/templates/)
 - Gumroad product copy created (exports/gumroad_product_copy.md)
+- Chatbot config created (exports/chatbot_config.md)
 
 ## Next
 - Publish Prestiiiged v0 principles page
