@@ -71,7 +71,7 @@ Result: "It exists, it works, people can buy it" — by night.
 
 ## Deliverables Checklist
 
-- [ ] 5 non-negotiable principles written
+- [x] 5 non-negotiable principles written (see `canon/prestiiiged_principles.md`)
 - [ ] PDF exported and formatted
 - [ ] Templates created (Notion/Google Docs)
 - [ ] Gumroad product page live

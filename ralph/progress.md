@@ -12,6 +12,7 @@
 - Swipe Vault populated (Ralph thread, Claude-Mem)
 - First daily plan generated
 - Initial guardrails added
+- 5 Prestiiiged principles written
 
 ## Next
 - Publish Prestiiiged v0 principles page
@@ -19,7 +20,7 @@
 - Draft onboarding flow copy
 
 ### Prestiiiged
-- [ ] Write 5 non-negotiable principles
+- [x] Write 5 non-negotiable principles
 - [ ] Draft landing page copy (headline + subhead + CTA)
 - [ ] Build High Achiever OS V1 (PDF + templates + chatbot)
 - [ ] Set up Gumroad delivery
