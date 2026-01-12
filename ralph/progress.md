@@ -18,6 +18,8 @@
 - Gumroad product copy created (exports/gumroad_product_copy.md)
 - Chatbot config created (exports/chatbot_config.md)
 - Landing page copy created (exports/landing_page_copy.md)
+- HTML landing page created (exports/site/index.html)
+- Deployment guide created (exports/DEPLOYMENT_GUIDE.md)
 
 ## Next
 - Publish Prestiiiged v0 principles page

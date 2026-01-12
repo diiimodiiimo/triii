@@ -212,4 +212,4 @@ The chatbot must embody Prestiiiged principles in every response:
 3. [x] Set up Gumroad product page (copy ready: `exports/gumroad_product_copy.md`)
 4. [x] Configure chatbot with PDF as knowledge base (config ready: `exports/chatbot_config.md`)
 5. [x] Write landing page copy (see `exports/landing_page_copy.md`)
-6. [ ] Deploy and test end-to-end flow
+6. [x] Deploy and test end-to-end flow (see `exports/DEPLOYMENT_GUIDE.md`)

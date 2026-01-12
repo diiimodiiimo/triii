@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The High Achiever Operating System | Prestiiiged</title>
+    <meta name="description" content="5 principles that separate high achievers from high performers. No hype. No hustle. The actual playbook for elite positioning.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #0a0a0a;
+            --text: #fafafa;
+            --text-muted: #888;
+            --accent: #d4af37;
+            --card-bg: #141414;
+            --border: #222;
+        }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            font-size: 18px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 80px 0;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 600;
+            line-height: 1.1;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .subhead {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 40px;
+            max-width: 600px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--text);
+            color: var(--bg);
+            padding: 16px 32px;
+            font-size: 1rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 4px;
+            transition: all 0.2s;
+        }
+
+        .cta-button:hover {
+            background: var(--accent);
+            color: var(--bg);
+        }
+
+        /* Sections */
+        section {
+            padding: 100px 0;
+            border-top: 1px solid var(--border);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 40px;
+            letter-spacing: -0.01em;
+        }
+
+        section p {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+        }
+
+        section p.highlight {
+            color: var(--text);
+            font-size: 1.1rem;
+        }
+
+        /* Problem Section */
+        .problem p:last-of-type {
+            color: var(--text);
+            font-style: italic;
+        }
+
+        /* Features */
+        .features-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .feature {
+            padding: 24px;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .feature h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--accent);
+        }
+
+        .feature p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Principles */
+        .principles-list {
+            list-style: none;
+            counter-reset: principles;
+        }
+
+        .principles-list li {
+            counter-increment: principles;
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .principles-list li:last-child {
+            border-bottom: none;
+        }
+
+        .principles-list li::before {
+            content: counter(principles) ".";
+            color: var(--accent);
+            font-weight: 600;
+            font-size: 1.25rem;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .principles-list h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .principles-list p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* For/Not For */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        @media (max-width: 600px) {
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .for-list, .not-for-list {
+            list-style: none;
+        }
+
+        .for-list li, .not-for-list li {
+            padding: 12px 0;
+            padding-left: 28px;
+            position: relative;
+        }
+
+        .for-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .not-for-list li::before {
+            content: "✗";
+            position: absolute;
+            left: 0;
+            color: #666;
+        }
+
+        .not-for-list li {
+            color: var(--text-muted);
+        }
+
+        /* Pricing */
+        .pricing-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 48px;
+            text-align: center;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .pricing-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 16px;
+        }
+
+        .price {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 24px;
+        }
+
+        .price span {
+            font-size: 1rem;
+            color: var(--text-muted);
+            font-weight: 400;
+        }
+
+        .pricing-features {
+            list-style: none;
+            text-align: left;
+            margin-bottom: 32px;
+        }
+
+        .pricing-features li {
+            padding: 8px 0;
+            padding-left: 24px;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .pricing-features li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        .pricing-note {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 16px;
+        }
+
+        /* FAQ */
+        .faq-item {
+            padding: 24px 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .faq-item p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Final CTA */
+        .final-cta {
+            text-align: center;
+            padding: 120px 0;
+        }
+
+        .final-cta h2 {
+            margin-bottom: 16px;
+        }
+
+        .final-cta p {
+            margin-bottom: 40px;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid var(--border);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin-bottom: 8px;
+        }
+
+        .tagline {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="container">
+            <h1>The operating system for people who are already in the room.</h1>
+            <p class="subhead">5 principles that separate high achievers from high performers. No hype. No hustle theater. Just the actual playbook.</p>
+            <a href="YOUR_GUMROAD_LINK_HERE" class="cta-button">Get the playbook — $19</a>
+        </div>
+    </header>
+
+    <!-- Problem -->
+    <section class="problem">
+        <div class="container">
+            <h2>You're already capable. The gap isn't talent.</h2>
+            <p>You've read the advice. Done the networking. Followed the playbooks.</p>
+            <p>But something still feels off.</p>
+            <p>The people who get into elite rooms don't seem to be trying as hard. They're not grinding 18-hour days or "crushing it." They're calm. They're positioned. They're obviously hard to ignore.</p>
+            <p>That's not luck. It's operating rhythm.</p>
+            <p class="highlight">Most advice tells you to work harder, reach out more, or "put yourself out there."</p>
+            <p>This tells you the truth: prestige doors open easiest when you don't need them to.</p>
+        </div>
+    </section>
+
+    <!-- What's Inside -->
+    <section>
+        <div class="container">
+            <h2>What you get</h2>
+            <div class="features-grid">
+                <div class="feature">
+                    <h3>The 5 Prestiiiged Principles</h3>
+                    <p>The non-negotiable rules that elite operators follow — whether they know it or not.</p>
+                </div>
+                <div class="feature">
+                    <h3>The Daily Operating Framework</h3>
+                    <p>Morning, work blocks, and evening routines designed for calm execution.</p>
+                </div>
+                <div class="feature">
+                    <h3>The Positioning Stack</h3>
+                    <p>How to build leverage before you ever ask for access.</p>
+                </div>
+                <div class="feature">
+                    <h3>The High-Stakes Interaction Guide</h3>
+                    <p>Before, during, and after frameworks for interviews, meetings, and important conversations.</p>
+                </div>
+                <div class="feature">
+                    <h3>4 Ready-to-Use Templates</h3>
+                    <p>Weekly Review, Daily Operating Log, Positioning Tracker, High-Stakes Prep Sheet.</p>
+                </div>
+                <div class="feature">
+                    <h3>AI Advisor Access</h3>
+                    <p>A chatbot trained on the Prestiiiged system to help you apply the principles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Principles -->
+    <section>
+        <div class="container">
+            <h2>The 5 Principles</h2>
+            <ul class="principles-list">
+                <li>
+                    <h3>Control the emotional temperature of the room</h3>
+                    <p>Your job isn't to perform — it's to make the other person feel at ease saying yes.</p>
+                </li>
+                <li>
+                    <h3>Earn leverage before you ask for access</h3>
+                    <p>What proof makes this conversation obvious?</p>
+                </li>
+                <li>
+                    <h3>Tell the truth, strategically</h3>
+                    <p>Your story is not your entire life — it's the signal you send.</p>
+                </li>
+                <li>
+                    <h3>Be dangerous at one thing</h3>
+                    <p>If you can't state your dangerous skill in one sentence, you haven't chosen it yet.</p>
+                </li>
+                <li>
+                    <h3>Play long games with short feedback loops</h3>
+                    <p>Every week must produce something concrete: output, proof, or signal.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- For / Not For -->
+    <section>
+        <div class="container">
+            <div class="two-col">
+                <div>
+                    <h2>This is for you if:</h2>
+                    <ul class="for-list">
+                        <li>You're aiming for elite outcomes</li>
+                        <li>You're allergic to hustle culture but still hungry</li>
+                        <li>You want structure without surveillance</li>
+                        <li>You'd rather ship than perform</li>
+                        <li>You know you're capable — you need the rhythm</li>
+                    </ul>
+                </div>
+                <div>
+                    <h2>This is not for you if:</h2>
+                    <ul class="not-for-list">
+                        <li>You're looking for motivation or accountability</li>
+                        <li>You collect systems but never use them</li>
+                        <li>You want to feel busy instead of be effective</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section>
+        <div class="container">
+            <div class="pricing-card">
+                <h3>The High Achiever Operating System</h3>
+                <div class="price">$19 <span>one-time</span></div>
+                <ul class="pricing-features">
+                    <li>Full PDF guide (5 principles + frameworks)</li>
+                    <li>4 ready-to-use templates</li>
+                    <li>AI advisor access</li>
+                    <li>Lifetime updates</li>
+                </ul>
+                <a href="YOUR_GUMROAD_LINK_HERE" class="cta-button">Get instant access</a>
+                <p class="pricing-note">No subscription. No upsells. Download immediately.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="container">
+            <h2>Questions</h2>
+            <div class="faq-item">
+                <h3>Is this another productivity system?</h3>
+                <p>No. This is about positioning, not productivity. It's about operating with calm leverage — not optimizing your to-do list.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Who is this for?</h3>
+                <p>Students and early professionals aiming for elite outcomes — Goldman, McKinsey, top schools, competitive programs. People who are already capable but need the operating rhythm.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What if I'm not applying to anything right now?</h3>
+                <p>The principles compound over time. Start now and you'll have leverage when you need it — instead of scrambling to build it.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a refund policy?</h3>
+                <p>If it doesn't resonate within 7 days, email me and I'll refund you. No questions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="final-cta">
+        <div class="container">
+            <h2>The system only works if you run it.</h2>
+            <p>You already know if this is for you. Stop collecting advice. Start operating.</p>
+            <a href="YOUR_GUMROAD_LINK_HERE" class="cta-button">Get the playbook — $19</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="logo">PRESTIIIGED</div>
+            <p class="tagline">Calm. Honest. Inevitable.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
