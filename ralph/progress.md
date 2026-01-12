@@ -14,6 +14,7 @@
 - Initial guardrails added
 - 5 Prestiiiged principles written
 - High Achiever OS V1 PDF content created (exports/prestiiiged_high_achiever_os_v1.md)
+- Templates created (exports/templates/)
 
 ## Next
 - Publish Prestiiiged v0 principles page
